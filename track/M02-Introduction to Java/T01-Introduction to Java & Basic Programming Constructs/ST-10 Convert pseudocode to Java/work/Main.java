@@ -5,18 +5,11 @@ public static void main(String[] args) {
 // Convert the given pseudocode into Java code
 
 int javaHoursPerDay = 2;
-
 int aptitudeHoursPerDay = 1;
-
 int numberofDays = 5;
-
 int weeklyJavaHours = javaHoursPerDay * numberofDays;
-
-
 int weeklyAptitudeHours = aptitudeHoursPerDay * numberofDays;
-
 int totalPreparationHours = weeklyJavaHours + weeklyAptitudeHours;
-
 System.out.println("Java: "+ weeklyJavaHours);
 
 System.out.println("Aptitude: "+ weeklyAptitudeHours);
