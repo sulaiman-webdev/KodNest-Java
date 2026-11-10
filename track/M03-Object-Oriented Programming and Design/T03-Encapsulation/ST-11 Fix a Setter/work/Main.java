@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Student {
+    private int marks = 50;
+
+    public void setMarks(int proposed) {
+        // Fix the logical operator in this condition:
+        if (proposed > 0 && proposed <= 100) {
+            marks = proposed;
+        }
+        else{
+            marks = 50 ;
+        }
+    }
+
+    public int getMarks() {
+        return marks;
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int input = sc.nextInt();
+        Student student = new Student();
+        student.setMarks(input);
+        System.out.println("Marks: " + student.getMarks());
+    }
+}
